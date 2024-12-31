@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </style>
+</head>
+
+<body>
+    <nav class=" nav1 navbar sticky">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto fs-1" href="#">Ronaq-e Mahal</a>
+            <!-- <button class="btn btn-dark" id="darkModeToggle">Toggle Dark Mode</button> -->
+        </div>
+
+
+
+    </nav>
+    <nav class=" nav2 navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">New Arrival</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Women</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Unstitched
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true">About Us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://www.mushq.pk/cdn/shop/files/web_banner_3_42531ae9-70a9-41e1-b715-63d265fcd70b.jpg?v=1733834540"
+                    alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="https://www.mushq.pk/cdn/shop/files/web_banner_d219ab20-a657-4318-bf1b-7f5a56b4f7fc.jpg?v=1732596518"
+                    alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="https://www.mushq.pk/cdn/shop/files/web_banner_2_ca1f14dc-8eea-44d1-a7a7-28830dea161d.jpg?v=1735040859"
+                    alt="Image 3">
+            </div>
+        </div>
+
+        <!-- Previous and Next buttons -->
+        <button class="nav-button prev" onclick="moveSlide(-1)">❮</button>
+        <button class="nav-button next" onclick="moveSlide(1)">❯</button>
+
+        <!-- Dots for navigation -->
+        <div class="dots">
+            <div class="dot" onclick="goToSlide(0)"></div>
+            <div class="dot" onclick="goToSlide(1)"></div>
+            <div class="dot" onclick="goToSlide(2)"></div>
+        </div>
+    </div>
+
+    <div class=" productp container-fluid">
+        <div class="row text-center">
+
+            <h1 class="mt-5">New Arrivals</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            <img class="pic-1"
+                                src="https://d12oh2gzettinl.cloudfront.net/instagram-story/stories/58730807460/379970573-1.jpg">
+                            <img class="pic-2"
+                                src="https://d12oh2gzettinl.cloudfront.net/instagram-story/stories/58730807460/379161023-1.jpg">
+                        </a>
+                        <ul class="product-links">
+                            <!-- <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li> -->
+                            <!-- <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li> -->
+                            <!-- <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li> -->
+                        </ul>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Salina </a></h3>
+                        <div class="price">RS. 4,500</div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="far fa-star"></li>
+                            <li>(2)</li>
+                        </ul>
+
+                        <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            <img class="pic-1"
+                                src="https://d12oh2gzettinl.cloudfront.net/instagram-story/stories/58730807460/379113754-1.jpg">
+                            <img class="pic-2"
+                                src="https://d12oh2gzettinl.cloudfront.net/instagram-story/stories/58730807460/379161023-1.jpg">
+                        </a>
+                        <!-- <ul class="product-links">
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                    </ul> -->
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Rang Mahal</a></h3>
+                        <div class="price">Rs. 5,699</div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="far fa-star"></li>
+                            <li class="far fa-star"></li>
+                            <li>(3)</li>
+                        </ul>
+                        <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            <img class="pic-1"
+                                src="https://d12oh2gzettinl.cloudfront.net/instagram-story/stories/58730807460/379161023-1.jpg">
+                            <img class="pic-2"
+                                src="https://d12oh2gzettinl.cloudfront.net/instagram-story/stories/58730807460/379113754-1.jpg">
+                        </a>
+                        <!-- <ul class="product-links">
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                    </ul> -->
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Sapphire</a></h3>
+                        <div class="price">Rs. 7,199</div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li>(5)</li>
+                        </ul>
+                        <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            <img class="pic-1"
+                                src="https://d12oh2gzettinl.cloudfront.net/instagram-story/stories/58730807460/379757353-1.jpg">
+                            <img class="pic-2"
+                                src="https://d12oh2gzettinl.cloudfront.net/instagram-story/stories/58730807460/378978452-1.jpg">
+                        </a>
+                        <!-- <ul class="product-links">
+                        <li><a href="#" data-tip="Add to Wishlist"><i class="fa fa-heart"></i></a></li>
+                        <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                        <li><a href="#" data-tip="Quick View"><i class="fa fa-eye"></i></a></li>
+                    </ul> -->
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Sana Safinaz</a></h3>
+                        <div class="price">Rs. 10,399</div>
+                        <ul class="rating">
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="fa fa-star"></li>
+                            <li class="far fa-star"></li>
+                            <li>(4)</li>
+                        </ul>
+                        <a href="#" class="add-cart"><i class="fas fa-cart-plus"></i>Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-md-6 col-sm-12">
+                <img src="https://dhanak.com.pk/cdn/shop/files/6il_785x.jpg?v=1728725243" class=" pic4 img-fluid"
+                    alt="">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="https://dhanak.com.pk/cdn/shop/files/velt_1880x.jpg?v=1731923312" class=" pic4 img-fluid"
+                    alt="">
+            </div>
+            <div class="col-md-6 col-sm-12 mt-5">
+                <img src="https://dhanak.com.pk/cdn/shop/files/momy_270x.jpg?v=1728725427" class="pic4 img-fluid"
+                    alt="">
+            </div>
+            <div class="col-md-6 col-sm-12 mt-5">
+                <img src="https://dhanak.com.pk/cdn/shop/files/IMG_5476new_270x.jpg?v=1731923654" class="pic4 img-fluid"
+                    alt="">
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <hr>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="text1">
+                <h1>Men,s clothes</h1>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1720179887218-cce7548da664?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNoYWx3YXIlMjBrYW1lZXp8ZW58MHx8MHx8fDA%3D"
+                    class=" pic5 img-fluid" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1710623994944-5c667bf5bff1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="pic5 img-fluid" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1720699599852-55eb13caaa8c?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="pic5 img-fluid" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1730809462615-81fc7f8b9c5f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="pic5 img-fluid" alt="">
+            </div>
+        </div>
+        <div class="row text-center mt-5">
+
+            <div class="col-md-3 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1711044697743-583f1f10ecc9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHNoYWx3YXIlMjBrYW1lZXp8ZW58MHx8MHx8fDA%3D"
+                    class="pic5 img-fluid" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1734418038517-ffc3a6a6751f?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fHNoYWx3YXIlMjBrYW1lZXp8ZW58MHx8MHx8fDA%3D"
+                    class="pic5 img-fluid" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1734418057975-4af150dbfd4e?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fHNoYWx3YXIlMjBrYW1lZXp8ZW58MHx8MHx8fDA%3D"
+                    class="pic5 img-fluid" alt="">
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1734418051356-9a8c398caaa1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fHNoYWx3YXIlMjBrYW1lZXp8ZW58MHx8MHx8fDA%3D"
+                    class="pic5 img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+
+        <div class="row text-center">
+
+            <div class="col-md-6 col-sm-12">
+                <h2>Mens</h2>
+                <img class="pic6 img-fluid"
+                    src="https://www.limelight.pk/cdn/shop/files/men_babb5762-caea-48f6-a099-99ed121a8030.jpg?v=1717479184"
+                    alt="">
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h2>Women,s</h2>
+                <img class="pic6 img-fluid"
+                    src="https://www.limelight.pk/cdn/shop/files/women_be999c31-346a-4254-b06b-396e70805695.jpg?v=1731069544"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class=" iconp container-fluid">
+        <div class=" iconr row mt-5">
+            <div class="col-md-1 col-sm-12">
+                <img class="icon1 img-fluid" src="img/airplane.gif" alt="">
+            </div>
+            <div class="col-md-3 col-sm-12">
+
+                <h6>Free Shiping</h6>
+                <br>
+                <h6>Free NationWide Delivery on order abovr Rs 5000 </h6>
+            </div>
+
+            <div class="col-md-1 col-sm-12">
+                <img class="icon1 img-fluid" src="img/tech-support.gif" alt="">
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Support</h6>
+                <br>
+                <h6>Contact 03452332823</h6>
+                <br>
+                <!-- <h6>Email Hasnainq1w1@gmail.com</h6> -->
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <img class="icon1 img-fluid" src="img/save-money.gif" alt="">
+
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <h6>Payment Method</h6>
+                <br>
+                <h6>Jazz Cash/easypaisa</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <footer>
+            <div class=" foop row">
+                <div class="col-md-3 col-sm-12">
+                    <H1>Ronaq-r-Mahal.</H1>
+                    
+                    
+                    <p>Track Click Here (Check your sms for tracking number) <br> Call Us: <u> +923452332823</u></p>                    
+                    <br>
+                    <i class="fa-brands fa-facebook fa-2xl ps-2"></i>
+                   <i class="fa-brands fa-instagram fa-2xl ps-4"></i>
+                </div>
+                <div class=" foo col-md-3 col-sm-12"> 
+                    <h3>Terms Of Services</h3>
+                    <a href="">Terms and condition</a> <br>
+                    <a href="">Privacy and Policy</a> <br>
+                    <a href="">Faqs</a> <br>
+                    <a href="">Location</a>
+                  
+                </div>
+                <div class=" foo col-md-3 col-sm-12">
+                    <h3>Customer care</h3>
+                    <a href="">Size Guide</a> <br>
+                    <a href="">Contact Us</a> <br>
+                    <a href="">Returns</a> <br>
+                    <a href="">Exchanges</a> <br>
+                    <a href="">Shipping And Delievery</a>
+                </div>
+                <div class=" foo col-md-3 col-sm-12">
+                    <h3>Payment</h3>
+                    <a href="">Jazz Cash</a> <br> 
+                    <a href="">Easy Paisa</a> <br>
+                    <a href="">Paypal</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <p class="note">Built with <a href="https://github.com/Accessible360/accessible-slick" target="_blank">accessible-slick</a>, a fully WCAG 2.0 / 2.1 compliant, drop-in replacement for Slick Slider!</p> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        let currentIndex = 0;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.dot');
+
+        // Function to change the slide
+        function moveSlide(step) {
+            currentIndex += step;
+            if (currentIndex >= totalSlides) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = totalSlides - 1;
+            updateSlider();
+        }
+
+        // Function to go to specific slide when dot is clicked
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlider();
+        }
+
+        // Update slider position and active dot
+        function updateSlider() {
+            slides.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+            updateDots();
+        }
+
+        // Update the active dot
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+      
+ // JavaScript to toggle dark mode
+ const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+
+    </script>
+</body>
+
+</html>
